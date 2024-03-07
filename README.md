@@ -6,7 +6,7 @@ Welcome to our online interview prep sessions! 🥳
 We're here to ace technical interviews by practicing Data Structures and Algorithms (DSA) and React questions. 💻
 
 ## How it Works
-- Each session: 2 DSA questions, 1 React question 📝
+- Each session: 2 DSA questions, 1 React question with theory 📝
 - We take turns interviewing and providing feedback 🔄
 
 ## Platform
