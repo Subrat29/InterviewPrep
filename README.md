@@ -1,4 +1,4 @@
-# 🚀 Interview Prep with Gavnish 🚀
+# 🚀 Interview Prep with [Gavnish](https://github.com/Gavnishkumar) 🚀
 
 Welcome to our online interview prep sessions! 🥳
 
