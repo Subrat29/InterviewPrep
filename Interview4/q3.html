@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynanic List</title>
+</head>
+
+<body>
+    <h1>Dynamic List</h1>
+    <input id="inputField" type="text">
+    <button onclick="addButton()">Add</button>
+    <div id="listStore">
+        <li>write and add a new list</li>
+    </div>
+
+    <script>
+        function addButton() {
+            const inputField = document.getElementById('inputField')
+            const newListContent = inputField.value
+            inputField.value = ''
+            const itemList = document.getElementById('listStore')
+            const newList = document.createElement('li')
+            newList.textContent = newListContent
+            itemList.appendChild(newList)
+        }
+        
+    </script>
+</body>
+
+</html>
