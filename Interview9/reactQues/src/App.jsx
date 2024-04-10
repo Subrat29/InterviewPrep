@@ -1,40 +1,21 @@
 import React, { useState } from 'react'
 
-
 function App() {
   const [todos, setTodo] = useState([])
   const [additem, setAdditem] = useState('')
   const [deleteitem, setDeleteitem] = useState('')
 
-  // const sortTodo = () => {
-  //   const sortedTodo = todos.sort((a, b) => a - b)
-  //   setTodo(sortedTodo)
-  // }
-
-  const print = () => {
-    console.log("Display List: ")
-    {
-      todos.map((todo) => (
-        console.log(todo)
-      ))
-
-    }
-  }
-
   const addItem = (e) => {
     e.preventDefault();
     setTodo([...todos, additem])
     setAdditem('')
-    print()
   }
 
   const deleteItem = (e) => {
     e.preventDefault();
-    let array = todos;
-    let updatedTodo = array.filter((todo) => todo !== deleteItem)
+    const updatedTodo = todos.filter((todo) => todo !== deleteitem)
     setTodo(updatedTodo)
     setDeleteitem('')
-    print()
   }
 
   return (
@@ -58,7 +39,7 @@ function App() {
 
       <h1>Display List</h1>
       <ul>
-        {todos.map((todo) => (
+        {todos.sort((a,b)=>a-b).map((todo) => (
           <li key={todo}>{todo}</li>
         ))}
       </ul>

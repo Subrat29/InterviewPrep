@@ -3,10 +3,11 @@
 #include <algorithm>
 using namespace std;
 
+// Given: Always even number of coins are present in row.
 int main()
 {
-    vector<int> coins = {18, 20, 15, 30, 10, 14};
-    // vector<int> coins = {55, 2, 11, 90, 33, 65, 32}; //Not valid for all test cases
+    // vector<int> coins = {18, 20, 15, 30, 10, 14};
+    vector<int> coins = {55, 111, 90, 33, 65, 32, 2, 67}; 
     int left = 0, right = coins.size() - 1;
     int even = 0, odd = 0;
 
