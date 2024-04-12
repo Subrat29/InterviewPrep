@@ -11,7 +11,7 @@ int findMinUtil(int arr[], int low, int high)
         return arr[low];
     }
 
-    // Handle the case where the array is rotated by only one element
+    // Handle the case where the array is rotated by only one element, ie: contains only 2 elements
     if (high == low + 1 && arr[low] > arr[high])
     {
         return arr[high];

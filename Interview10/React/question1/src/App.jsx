@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Login from './components/Login'
 import Profile from './components/Profile'
+import { TodoProvider } from './context/todoContext'
+
 function App() {
+  const [user, setUser] = useState({})
+
   return (
-    <div>
-      <Login/>
-      <Profile/>
-    </div>
+    <TodoProvider value={{ user, setUser }}>
+      <Login />
+      <Profile />
+    </TodoProvider>
   )
 }
 
